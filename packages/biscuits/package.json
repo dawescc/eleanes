@@ -1,0 +1,43 @@
+{
+	"name": "@eleanes/biscuits",
+	"version": "0.3.0",
+	"description": "the biscuits app package by eleanes, powered by nextjs",
+	"license": "MIT",
+	"bin": {
+		"make-biscuits": "dist/scripts/make-biscuits.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"files": [
+		"css",
+		"dist",
+		"src/default"
+	],
+	"dependencies": {
+		"execa": "^9.5.2",
+		"fs-extra": "^11.3.0"
+	},
+	"peerDependencies": {
+		"clsx": "latest",
+		"next-themes": "latest",
+		"react-icons": "latest",
+		"tailwind-merge": "latest",
+		"@vercel/analytics": "latest",
+		"@vercel/speed-insights": "latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eleanes/eleanes/",
+		"directory": "packages/biscuits"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^11.0.4",
+		"@types/node": "^20",
+		"typescript": "^5"
+	}
+}
