@@ -1,6 +1,6 @@
 {
 	"name": "@eleanes/biscuits",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "the biscuits app package by eleanes, powered by nextjs",
 	"license": "MIT",
 	"bin": {

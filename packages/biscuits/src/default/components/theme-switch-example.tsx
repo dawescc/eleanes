@@ -19,6 +19,7 @@ export const ThemeDisplay = () => {
 
 	const iconClasses = "inline size-[1em]";
 
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	function themeIcon(theme: any) {
 		switch (theme) {
 			case "light":
