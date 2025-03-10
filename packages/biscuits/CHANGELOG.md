@@ -1,5 +1,11 @@
 # @eleanes/biscuits
 
+## 0.3.1
+
+### Patch Changes
+
+- e999cf6: updated readmes
+
 ## 0.3.0
 
 ### Minor Changes
