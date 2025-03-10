@@ -1,6 +1,12 @@
 {
 	"name": "@eleanes/biscuits",
-	"version": "0.3.2",
+	"version": "0.3.3",
+	"homepage": "https://eleanes.org/biscuits",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/eleanes/eleanes/",
+		"directory": "packages/biscuits"
+	},
 	"description": "the biscuits app package by eleanes, powered by nextjs",
 	"license": "MIT",
 	"bin": {
@@ -26,11 +32,6 @@
 		"tailwind-merge": "latest",
 		"@vercel/analytics": "latest",
 		"@vercel/speed-insights": "latest"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/eleanes/eleanes/",
-		"directory": "packages/biscuits"
 	},
 	"publishConfig": {
 		"access": "public"
