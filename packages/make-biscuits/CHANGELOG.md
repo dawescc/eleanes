@@ -1,5 +1,11 @@
 # @eleanes/biscuits
 
+## 0.3.4
+
+### Patch Changes
+
+- 47343c6: separated make-biscuits
+
 ## 0.3.3
 
 ### Patch Changes
