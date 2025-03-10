@@ -9,31 +9,36 @@ jobs:
     release:
         name: Release
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
         steps:
             - name: Checkout Repo
               uses: actions/checkout@v3
               with:
                   fetch-depth: 0
 
-            - name: Setup Node.js
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-                  cache: "pnpm"
-
             - name: Setup PNPM
               uses: pnpm/action-setup@v2
               with:
                   version: 7
 
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 20
+                  cache: "pnpm"
+
             - name: Install Dependencies
-              run: pnpm install --frozen-lockfile
+              run: pnpm install
 
             - name: Create Release Pull Request or Publish to npm
               id: changesets
               uses: changesets/action@v1
               with:
                   publish: pnpm run release
+                  # Add this to prevent publishing when no changesets are present
+                  publishOnlyWhenChangesets: true
               env:
+                  NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
