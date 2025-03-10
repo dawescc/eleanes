@@ -1,11 +1,5 @@
 # @eleanes/biscuits
 
-## 0.3.4
-
-### Patch Changes
-
-- Removed scaffolding into separate package
-
 ## 0.3.3
 
 ### Patch Changes

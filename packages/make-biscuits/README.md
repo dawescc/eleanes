@@ -1,4 +1,4 @@
-# @eleanes/biscuits 🍪
+# make-biscuits
 
 A custom `create-next-app` utility that scaffolds a Next.js application with custom templates, components, and configurations.
 
@@ -27,7 +27,7 @@ A custom `create-next-app` utility that scaffolds a Next.js application with cus
 cd /project
 
 # Go
-pnpm make-biscuits .
+pnpx make-biscuits .
 pnpm dev
 
 ```

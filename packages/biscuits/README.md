@@ -1,33 +1,38 @@
-# @eleanes/biscuits 🍪
+# @eleanes/biscuits
 
-A custom `create-next-app` utility that scaffolds a Next.js application with custom templates, components, and configurations.
+A custom css utility that offers an accessible, extensible, and easy to use design system.
 
 ## Features
 
--   Scaffolds a Next.js application with optimal settings:
-    -   TypeScript (default)
-    -   TailwindCSS (default)
-    -   ESLint configured
-    -   App Router
-    -   No src directory
-    -   Turbopack for development
--   Adds custom components and utilities:
-    -   Theme provider with dark mode support (via `next-themes`)
-    -   Standardized layout and error handling
-    -   Useful React hooks (useCopyToClipboard, useLockBody, useMediaQuery)
-    -   Utility functions for component styling (using `clsx` & `tailwind-merge`)
-    -   Google Fonts configuration
--   Provides a cohesive styling system
--   Includes analytics and speed monitoring (via `Vercel`)
+-   Colors
+-   More coming soon!
+
+See [`make-biscuits`](https://www.npmjs.com/package/make-biscuits) for more information on scaffolding an app with the biscuits system by default.
 
 ## Get Started
 
 ```bash
-# Create a new project folder
-cd /project
-
 # Go
-pnpm make-biscuits .
-pnpm dev
+pnpm add @eleanes/biscuits
 
+```
+
+Use the css in your theme file.
+
+```css
+@import "@eleanes/biscuits/css/";
+```
+
+Use the tokens as regular css variable, or as Tailwind V4 classes.
+Dark mode is automatically included by using the `@variant` directive on the `:root` variables.
+
+```css
+body {
+	background-color: var(--gray-1);
+	color: var(--gray-12);
+}
+```
+
+```tsx
+<div className="bg-blue-7 text-blue-12">{...}<>
 ```
