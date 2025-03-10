@@ -4,8 +4,6 @@ on:
     push:
         branches:
             - main
-        paths:
-            - ".changeset/**"
 
 jobs:
     release:
@@ -39,6 +37,8 @@ jobs:
               uses: changesets/action@v1
               with:
                   publish: pnpm run release
+                  # Add this to prevent publishing when no changesets are present
+                  publishOnlyWhenChangesets: true
               env:
                   NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
