@@ -1,0 +1,72 @@
+@layer base {
+	:root {
+		--title-large-size: 34px;
+		--title-large-line-height: 41px;
+
+		--title-1-size: 28px;
+		--title-1-line-height: 34px;
+
+		--title-2-size: 22px;
+		--title-2-line-height: 28px;
+
+		--title-3-size: 20px;
+		--title-3-line-height: 25px;
+
+		--headline-size: 17px;
+		--headline-line-height: 22px;
+
+		--body-size: 17px;
+		--body-line-height: 22px;
+
+		--callout-size: 16px;
+		--callout-line-height: 21px;
+
+		--subhead-size: 15px;
+		--subhead-line-height: 20px;
+
+		--footnote-size: 13px;
+		--footnote-line-height: 18px;
+
+		--caption-1-size: 12px;
+		--caption-1-line-height: 16px;
+
+		--caption-2-size: 11px;
+		--caption-2-line-height: 13px;
+	}
+}
+
+@theme inline {
+	--text-*: initial;
+	--text-title-large: var(--title-large-size);
+	--text-title-large--line-height: var(--title-large-line-height);
+
+	--text-title-1: var(--title-1-size);
+	--text-title-1--line-height: var(--title-1-line-height);
+
+	--text-title-2: var(--title-2-size);
+	--text-title-2--line-height: var(--title-2-line-height);
+
+	--text-title-3: var(--title-3-size);
+	--text-title-3--line-height: var(--title-3-line-height);
+
+	--text-headline: var(--headline-size);
+	--text-headline--line-height: var(--headline-line-height);
+
+	--text-body: var(--body-size);
+	--text-body--line-height: var(--body-line-height);
+
+	--text-callout: var(--callout-size);
+	--text-callout--line-height: var(--callout-line-height);
+
+	--text-subhead: var(--subhead-size);
+	--text-subhead--line-height: var(--subhead-line-height);
+
+	--text-footnote: var(--footnote-size);
+	--text-footnote--line-height: var(--footnote-line-height);
+
+	--text-caption-1: var(--caption-1-size);
+	--text-caption-1--line-height: var(--caption-1-line-height);
+
+	--text-caption-2: var(--caption-2-size);
+	--text-caption-2--line-height: var(--caption-2-line-height);
+}

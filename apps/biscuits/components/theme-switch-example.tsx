@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { HiComputerDesktop } from "react-icons/hi2";
@@ -17,18 +18,18 @@ export const ThemeDisplay = () => {
 		}
 	}
 
-	const iconClasses = "inline size-[1em]";
+	const iconClasses = "inline";
 
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	function themeIcon(theme: any) {
 		switch (theme) {
 			case "light":
-				return <BsFillSunFill className={iconClasses} />;
+				return <BsFillSunFill className={cn(iconClasses)} />;
 			case "dark":
-				return <BsFillMoonStarsFill className={iconClasses} />;
+				return <BsFillMoonStarsFill className={cn(iconClasses)} />;
 			case "system":
 			default:
-				return <HiComputerDesktop className={iconClasses} />;
+				return <HiComputerDesktop className={cn(iconClasses)} />;
 		}
 	}
 
