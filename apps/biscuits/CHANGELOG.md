@@ -1,5 +1,12 @@
 # biscuits
 
+## 0.1.3
+
+### Patch Changes
+
+- Updated dependencies [a56f806]
+  - @eleanes/biscuits@0.3.7
+
 ## 0.1.2
 
 ### Patch Changes
