@@ -1,5 +1,11 @@
 # @eleanes/biscuits
 
+## 0.3.7
+
+### Patch Changes
+
+- a56f806: Moved dark mode variants into root descriptor
+
 ## 0.3.6
 
 ### Patch Changes
